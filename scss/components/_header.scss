@@ -31,7 +31,7 @@
     
     }
     &__address{
-        max-width: 1300px;  
+        max-width: 700px;  
 
         &--texts{
             display: flex;
@@ -41,29 +41,73 @@
             margin: 0;
         }
         &--item{
-            max-width: 250px;
+            max-width: 300px;
             text-align: left;
 
-            &-address{
-                background-image: url;
-            }
         }
         &--item + &--item{
             margin-left: 80px;
-        }   
-        &--location{
+        } 
+        @mixin address {
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 8px 30px;
             color: #FFEF98;
             align-items: center;
             font-size: 14px;
             font-weight: normal;
             text-decoration: none;
+        }  
+        &--location-vector{
+            @include address();
+            background-image: url(../images/vector.png);
         }    
-        &--location:hover{
+        &--location-tell{
+            @include address();
+            padding: 0px 0px 80px 30px;
+            background-image: url(../images/tell.png);
+        }       
+        &--location-email{
+            @include address();
+        }
+        location-vector,
+        location-tell,
+        location-email,:hover{
             color: rgb(204, 204, 255);
         }
     }
 
+    &__navbar{
+        max-width: 1100px;
+        text-transform: uppercase;
+        line-height: 19px;
+
+        &--menu{
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        &--item{
+            width: 170px;
+            text-align: center;
+            background-color: #D0FFFF;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 40px 20px;
+        }
+        &--item:hover{
+            background-color: rgb(175, 175, 245);
+        }
+        &--link{
+            text-decoration: none;
+            color: #000;
+        }
+        &--link:hover{
+            color: rgb(231, 245, 28);
+        }
     }
+}
 
     
 
