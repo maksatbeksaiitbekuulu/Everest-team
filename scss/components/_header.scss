@@ -1,11 +1,9 @@
 @import "../vars";
-@import "../mixins";
 
 .header{
-    background-color: transparentize(#041540, $amount: 0.00);
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
-    font-style: normal;
+    background-color: transparentize( $main-header-bg-color , $amount: 0.00);
+    @include title-text("Roboto" );
+    
     text-decoration: none;
 
     &__inner{
@@ -14,21 +12,21 @@
         align-items: center;
         padding-top: 20px;
 
-        &--link img{
+        &--link {
             max-width: 100px;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 40px;
             max-width: 250px;
-            padding-top: 20px;
         }
     
-        &--link img{
+        &--logo{
          max-width: 100px;
          text-decoration: none;
          text-transform: uppercase;
          font-size: 40px;
          max-width: 250px;
+         padding-top: 20px;
       }
     
     }
@@ -42,21 +40,30 @@
             flex-wrap: wrap;
             margin: 0;
         }
+        &--item{
+            max-width: 250px;
+            text-align: left;
 
-    }
-
-        &__texts--item + &__texts--item{
-            margin-left: 80px;
+            &-address{
+                background-image: url;
+            }
         }
-    
-    &__item--location{
-        text-decoration: none;
-        color: #FFEF98;
-        font-size: 14px;
-        font-weight: normal;
-    }    
-    &__item--location:hover{
-        color: rgb(204, 204, 255);
+        &--item + &--item{
+            margin-left: 80px;
+        }   
+        &--location{
+            color: #FFEF98;
+            align-items: center;
+            font-size: 14px;
+            font-weight: normal;
+            text-decoration: none;
+        }    
+        &--location:hover{
+            color: rgb(204, 204, 255);
+        }
     }
-}
+
+    }
+
+    
 

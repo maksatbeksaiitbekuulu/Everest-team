@@ -9,22 +9,21 @@ html{
     box-sizing: inherit;
 }
 
-
-    $font-stack: Roboto, Roboto-Condensed, Roboto-Slab;
-    $primary-color: #192a56;
-    $footer: #2b0909;
-
-
+@mixin title-text(
+  $font-family: "Roboto" sans-serif,
+  $font-size: 16px,
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+}
 
 body{
     margin: 0;
     padding: 0;
-    font-family: $font-stack;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* color: $main-text-color; */
+    @include title-text("Roboto" );
 }
 
 $container: 1130px;

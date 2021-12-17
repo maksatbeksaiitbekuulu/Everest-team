@@ -1,5 +1,5 @@
 @import "../vars";
 
 .main{
-    background-color: transparentize(#041540, $amount: 0.095);
+    background-color: transparentize($main-bg-color, $amount: 0.095);
 }

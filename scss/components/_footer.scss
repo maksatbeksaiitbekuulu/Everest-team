@@ -1,0 +1,5 @@
+@import "../vars";
+
+.footer{
+    background-color: transparentize($main-footer-bg-color, $amount: 0.0);
+}
