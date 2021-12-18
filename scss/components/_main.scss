@@ -1,4 +1,5 @@
 @import "../vars";
+@import "../mixins";
 
 .main{
     background-color: transparentize($main-bg-color, $amount: 0.095);
@@ -22,30 +23,10 @@
             line-height: 40px;
             margin-top: 50%;
         }
-
-        @mixin button-link {
-            @include font-text("Roboto Condensed");
-            font-size: 16px;
-            font-weight: normal;
-            line-height: 28px;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $main-texts-color;
-            background-color: #5AB9EF;
-            max-width: 250px;
-            min-height: 50px;
-            padding: 10px 40px;
-            text-align: center;
-            border-radius: 100px 0px 100px 0px;
-            
-        }
         &--link{
             @include button-link();
         }
-        @mixin button-link-hover {
-            background-color: darken($color: #2285d6, $amount: 3);
-            
-        }
+        
         &--link:hover{
             @include button-link-hover();
             transition: all 0.3s ease-out;
@@ -59,22 +40,11 @@
         }
     }
 }
-@mixin tile {
-    @include font-text("Roboto Condensed");
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 30px;
-
-
-
-
-}
-
 .levels{
     min-height: 340px;
 
     &__title{
-        @include tile();
+        @include title();
         text-align: center;
         margin: 0 auto;
     }
@@ -102,7 +72,7 @@ hr{
 
 .why{
     &__title{
-        @include tile();
+        @include title();
         margin-bottom: 0;
         text-transform: uppercase;
     }

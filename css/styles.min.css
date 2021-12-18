@@ -22,26 +22,20 @@ body {
   margin: 0 auto;
   padding: 10px; }
 
-.footer__first-content--icons-facebook {
+.footer__icons-facebook {
   background-image: url(../images/facebook.png); }
 
-.footer__first-content--icons-twitter {
+.footer__icons-twitter {
   background-image: url(../images/twitter.png); }
 
-.footer__first-content--icons-telegram {
+.footer__icons-telegram {
   background-image: url(../images/telegram.png); }
 
-.footer__first-content--icons-instagram {
+.footer__icons-instagram {
   background-image: url(../images/instagram.png); }
 
 .header {
   background-color: #041540;
-  font-family: "Roboto Condensed";
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 24px;
-  font-weight: 700;
   text-decoration: none;
   margin-bottom: 0; }
   .header__inner {
@@ -59,21 +53,23 @@ body {
             align-items: center;
     padding-top: 20px; }
     .header__inner--link {
-      max-width: 100px;
+      font-family: "Roboto Condensed";
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 24px;
       text-decoration: none;
       text-transform: uppercase;
+      font-weight: 700;
       font-size: 40px;
-      max-width: 250px; }
+      text-align: center;
+      color: #fff;
+      font-weight: 700; }
     .header__inner--logo {
       max-width: 250px;
       padding-top: 20px; }
   .header__address {
-    max-width: 700px;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 24px; }
+    max-width: 700px; }
     .header__address--texts {
       display: -webkit-box;
       display: -webkit-flex;
@@ -94,6 +90,7 @@ body {
     .header__address--item + .header__address--item {
       margin-left: 80px; }
     .header__address--location-vector {
+      background-image: url(../images/vector.png);
       background-repeat: no-repeat;
       text-align: center;
       padding: 8px 30px;
@@ -103,9 +100,9 @@ body {
           -ms-flex-align: center;
               align-items: center;
       font-weight: normal;
-      text-decoration: none;
-      background-image: url(../images/vector.png); }
+      text-decoration: none; }
     .header__address--location-tell {
+      background-image: url(../images/tell.png);
       background-repeat: no-repeat;
       text-align: center;
       padding: 8px 30px;
@@ -116,8 +113,7 @@ body {
               align-items: center;
       font-weight: normal;
       text-decoration: none;
-      padding: 0px 0px 20px 30px;
-      background-image: url(../images/tell.png); }
+      padding: 0px 0px 20px 30px; }
     .header__address--location-email {
       background-repeat: no-repeat;
       text-align: center;
@@ -134,8 +130,19 @@ body {
     .header__address location-email, .header__address :hover {
       color: #ccccff; }
   .header__navbar {
-    max-width: 1100px;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    max-width: 1100px;
+    font-weight: 600;
     font-size: 14px;
     line-height: 19px; }
     .header__navbar--menu {
@@ -292,114 +299,212 @@ hr {
   font-weight: 600; }
 
 .footer {
-  font-family: "Roboto Slab";
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 24px;
   background-color: #26292e;
-  color: #fff; }
-  .footer__first-content--icons-facebook {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 40px;
-    height: 40px;
-    background-color: #26292e;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    margin-left: 5px; }
-  .footer__first-content--icons-twitter {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 40px;
-    height: 40px;
-    background-color: #26292e;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    margin-left: 5px; }
-  .footer__first-content--icons-telegram {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 40px;
-    height: 40px;
-    background-color: #26292e;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    margin-left: 5px; }
-  .footer__first-content--icons-instagram {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 40px;
-    height: 40px;
-    background-color: #26292e;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    margin-left: 5px; }
-  .footer__first-content {
-    float: left;
+  margin-top: 0;
+  min-height: 300px; }
+  .footer__logo--link {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #fff; }
+  .footer__logo--img {
     max-width: 250px;
-    min-height: 300px;
-    margin-right: 50px; }
-    .footer__first-content--logo {
-      max-width: 200px; }
-  .footer__second-content {
-    float: left;
-    max-width: 250px;
-    min-height: 300px;
-    margin-right: 50px; }
-    .footer__second-content--link,
-    .footer__second-content--link a {
+    padding-top: 10px;
+    padding-right: 20px; }
+  .footer__icons-facebook {
+    margin-top: 100px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    background-color: #26292e;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-left: 5px; }
+  .footer__icons-twitter {
+    margin-top: 100px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    background-color: #26292e;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-left: 5px; }
+  .footer__icons-telegram {
+    margin-top: 100px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    background-color: #26292e;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-left: 5px; }
+  .footer__icons-instagram {
+    margin-top: 100px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    background-color: #26292e;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-left: 5px; }
+  .footer__content {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    max-width: 200px;
+    min-height: 250px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-right: 70px; }
+    .footer__content--title {
+      font-family: "Roboto Condensed";
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 24px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 30px;
+      color: white;
+      text-align: center; }
+    .footer__content--links,
+    .footer__content--link a {
       list-style: none;
       text-decoration: none;
       color: #fff; }
-    .footer__second-content--link a:hover {
+    .footer__content--link :hover {
       color: #65ffff;
       -webkit-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; }
-  .footer__third-content {
-    float: left;
-    max-width: 250px;
-    min-height: 300px;
-    margin-right: 50px; }
-    .footer__third-content--links,
-    .footer__third-content--links a {
-      list-style: none;
-      text-decoration: none;
-      color: #fff; }
-    .footer__third-content--links a:hover {
-      color: #65ffff;
-      -webkit-transition: all 0.3s ease-out;
-      -o-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
-  .footer__contact-form {
-    min-height: 300px; }
-    .footer__contact-form--input, .footer__contact-form--textarea, .footer__contact-form--button {
+    .footer__content--contact {
+      background-color: #e4e4e4;
+      width: 300px;
+      height: 30px;
       margin: 5px;
-      height: 40px;
-      background-color: #cacaca;
-      -webkit-border-radius: 15px;
-              border-radius: 15px; }
-    .footer__contact-form--textarea {
-      min-height: 100px; }
-  .footer__contact-form--input, .footer__contact-form--textarea, .footer__contact-form--button {
-    width: 330px; }
+      -webkit-border-radius: 10px;
+              border-radius: 10px; }
+      .footer__content--contact-textarea {
+        min-height: 70px; }
+      .footer__content--contact-button {
+        max-width: 200px;
+        margin: 0 50px; }
 
-.copyrightText {
-  text-align: center; }
+.copytext {
+  text-align: center;
+  color: white; }
+
+/* 
+.footer{
+    @include font-text("Roboto Slab");
+    background-color: $main-footer-bg-color;
+    color: $main-texts-color;
+
+    @mixin footer-content {
+      float: left;
+      max-width: 250px;
+      min-height: 300px;
+      margin-right: 50px;
+    }
+    &__first-content--icons{
+        &-facebook{
+            @include footer-icon();
+        }
+        &-twitter{
+            @include footer-icon();
+        }
+        &-telegram{
+            @include footer-icon();
+        }
+        &-instagram{
+            @include footer-icon();
+        }
+
+    }
+    
+    &__first-content{
+        @include footer-content();
+      &--logo{
+          max-width: 200px;
+      }
+    }
+    @mixin footer-link {
+        list-style: none;
+        text-decoration: none;
+        color: $main-texts-color;
+    }
+    
+    &__second-content{
+        @include footer-content();
+        &--link,
+        &--link a{
+            @include footer-link();
+        }
+        &--link a:hover{
+            color: #65ffff;
+            transition: all 0.3s ease-out;
+        }
+    }
+    &__third-content{
+        @include footer-content();
+        &--links,
+        &--links a{
+            @include footer-link();
+        }
+        &--links a:hover{
+            color: #65ffff;
+            transition: all 0.3s ease-out;
+        }
+    }
+    &__contact-form{
+        min-height: 300px;
+        &--input,
+        &--textarea,
+        &--button{
+            margin: 5px;
+           height: 40px;
+           background-color: rgb(202, 202, 202);
+           border-radius: 15px;
+        }
+        &--textarea{
+            min-height: 100px;
+        }
+    }
+    &__contact-form--input,
+    &__contact-form--textarea,
+    &__contact-form--button{
+        width: 330px;
+    }
+}
+.copyrightText{
+    text-align: center;
+} */

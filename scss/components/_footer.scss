@@ -1,15 +1,92 @@
 @import "../vars";
-@mixin footer-icon {
-    display: inline-flex;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 40px;
-    height: 40px;
-    background-color: #26292e;
-    border-radius: 50%;
-    margin-left: 5px;
+@import "../mixins";
     
+
+
+.footer{
+    background-color: $main-footer-bg-color;
+    margin-top: 0;
+    min-height: 300px;
+    &__logo{
+
+        &--link {
+            @include logo();
+        }
+    
+        &--img{
+         max-width: 250px;
+         padding-top: 10px;
+         padding-right: 20px;
+        } 
+
+    }
+        &__icons{
+            &-facebook{
+                margin-top: 100px;
+                @include footer-icon();
+            }
+            &-twitter{
+                margin-top: 100px;
+                @include footer-icon();
+            }
+            &-telegram{
+                margin-top: 100px;
+                @include footer-icon();
+            }
+            &-instagram{
+                margin-top: 100px;
+                @include footer-icon();
+            }
+    
+        }
+    &__content{
+        display: inline-flex;
+        max-width: 200px;
+        min-height: 250px;
+        flex-wrap: wrap;
+        margin-right: 70px;
+        &--title{
+            @include title();
+            color: white;
+            text-align: center;
+        }
+        
+        &--links,
+        &--link a{
+            list-style: none;
+            text-decoration: none;
+            color: $main-texts-color ;
+        }
+        &--link :hover{
+            color: #65ffff;
+            transition: all 0.3s ease-out;
+        }
+
+        &--contact{
+            background-color: rgb(228, 228, 228);
+            width: 300px;
+            height: 30px;
+            margin: 5px;
+            border-radius: 10px;
+
+            &-textarea{
+                min-height: 70px;
+            }
+            &-button{
+                max-width: 200px;
+                margin: 0 50px ;
+            }
+        }
+    }
 }
+.copytext{
+    text-align: center;
+    color: white;
+}
+
+
+
+/* 
 .footer{
     @include font-text("Roboto Slab");
     background-color: $main-footer-bg-color;
@@ -93,4 +170,4 @@
 }
 .copyrightText{
     text-align: center;
-}
+} */
