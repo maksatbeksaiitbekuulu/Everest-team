@@ -1,0 +1,45 @@
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+@mixin font-text(
+  $font-family: "'Roboto','Roboto Condensed','Roboto Slab" sans-serif,
+  $font-size: 14px,
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    @include font-text("Roboto" );
+}
+
+$container: 1130px;
+
+.container{
+   max-width: ($container );
+   margin: 0 auto;
+   padding: 10px;
+   border: 1px solid white;
+}
+  
+
+@import "./components/header";
+@import "./components/main";
+@import "./components/services";
+@import "./components/footer";
+@import "./vars";
+
+
