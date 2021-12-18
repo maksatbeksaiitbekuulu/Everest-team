@@ -61,7 +61,7 @@
         }    
         &--location-tell{
             @include address();
-            padding: 0px 0px 80px 30px;
+            padding: 0px 0px 20px 30px;
             background-image: url(../images/tell.png);
         }       
         &--location-email{
@@ -96,14 +96,16 @@
             margin: 40px 20px;
         }
         &--item:hover{
-            background-color: rgb(175, 223, 245);
+            background-color: lighten($color: #0f1f4b, $amount: 5);
+            transition: all 0.3s ease-out;
         }
         &--link{
             text-decoration: none;
             color: #FFEF98;
         }
         &--link:hover{
-            color: rgb(0, 0, 0);
+            color: #65ffff;
+            transition: all 0.3s ease-out;
         }
     }
 }

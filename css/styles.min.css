@@ -20,8 +20,19 @@ body {
 .container {
   max-width: 1130px;
   margin: 0 auto;
-  padding: 10px;
-  border: 1px solid white; }
+  padding: 10px; }
+
+.footer__first-content--icons-facebook {
+  background-image: url(../images/facebook.png); }
+
+.footer__first-content--icons-twitter {
+  background-image: url(../images/twitter.png); }
+
+.footer__first-content--icons-telegram {
+  background-image: url(../images/telegram.png); }
+
+.footer__first-content--icons-instagram {
+  background-image: url(../images/instagram.png); }
 
 .header {
   background-color: #041540;
@@ -105,7 +116,7 @@ body {
               align-items: center;
       font-weight: normal;
       text-decoration: none;
-      padding: 0px 0px 80px 30px;
+      padding: 0px 0px 20px 30px;
       background-image: url(../images/tell.png); }
     .header__address--location-email {
       background-repeat: no-repeat;
@@ -147,19 +158,25 @@ body {
       padding: 10px;
       margin: 40px 20px; }
     .header__navbar--item:hover {
-      background-color: #afdff5; }
+      background-color: #132860;
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
     .header__navbar--link {
       text-decoration: none;
       color: #FFEF98; }
     .header__navbar--link:hover {
-      color: black; }
+      color: #65ffff;
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
 
 .main {
   background-color: rgba(4, 21, 64, 0.905);
   color: #fff; }
   .main__hero {
     min-height: 600px; }
-    .main__hero--bottom {
+    .main__hero--button {
       max-width: 350px;
       min-height: 50px;
       text-align: center;
@@ -174,7 +191,7 @@ body {
       font-weight: normal;
       text-align: center;
       line-height: 40px;
-      margin-top: 70px; }
+      margin-top: 50%; }
     .main__hero--link {
       font-family: "Roboto Condensed";
       font-size: 14px;
@@ -195,13 +212,16 @@ body {
       -webkit-border-radius: 100px 0px 100px 0px;
               border-radius: 100px 0px 100px 0px; }
     .main__hero--link:hover {
-      background-color: #207dc9; }
+      background-color: #207dc9;
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
     .main__hero--img {
-      max-width: 850px;
+      max-width: 750px;
       min-height: 600px;
       -webkit-border-radius: 90% 0% 0% 0%;
               border-radius: 90% 0% 0% 0%;
-      margin-left: -100px; }
+      margin-left: 0 auto; }
 
 .levels {
   min-height: 340px; }
@@ -250,10 +270,12 @@ hr {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .why__icons {
   max-width: 300px;
@@ -270,4 +292,114 @@ hr {
   font-weight: 600; }
 
 .footer {
-  background-color: #29201c; }
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  background-color: #26292e;
+  color: #fff; }
+  .footer__first-content--icons-facebook {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    background-color: #26292e;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-left: 5px; }
+  .footer__first-content--icons-twitter {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    background-color: #26292e;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-left: 5px; }
+  .footer__first-content--icons-telegram {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    background-color: #26292e;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-left: 5px; }
+  .footer__first-content--icons-instagram {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    background-color: #26292e;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-left: 5px; }
+  .footer__first-content {
+    float: left;
+    max-width: 250px;
+    min-height: 300px;
+    margin-right: 50px; }
+    .footer__first-content--logo {
+      max-width: 200px; }
+  .footer__second-content {
+    float: left;
+    max-width: 250px;
+    min-height: 300px;
+    margin-right: 50px; }
+    .footer__second-content--link,
+    .footer__second-content--link a {
+      list-style: none;
+      text-decoration: none;
+      color: #fff; }
+    .footer__second-content--link a:hover {
+      color: #65ffff;
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+  .footer__third-content {
+    float: left;
+    max-width: 250px;
+    min-height: 300px;
+    margin-right: 50px; }
+    .footer__third-content--links,
+    .footer__third-content--links a {
+      list-style: none;
+      text-decoration: none;
+      color: #fff; }
+    .footer__third-content--links a:hover {
+      color: #65ffff;
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+  .footer__contact-form {
+    min-height: 300px; }
+    .footer__contact-form--input, .footer__contact-form--textarea, .footer__contact-form--button {
+      margin: 5px;
+      height: 40px;
+      background-color: #cacaca;
+      -webkit-border-radius: 15px;
+              border-radius: 15px; }
+    .footer__contact-form--textarea {
+      min-height: 100px; }
+  .footer__contact-form--input, .footer__contact-form--textarea, .footer__contact-form--button {
+    width: 330px; }
+
+.copyrightText {
+  text-align: center; }
