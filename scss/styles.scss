@@ -9,9 +9,9 @@ html{
     box-sizing: inherit;
 }
 
-@mixin title-text(
-  $font-family: "Roboto" sans-serif,
-  $font-size: 16px,
+@mixin font-text(
+  $font-family: "'Roboto','Roboto Condensed','Roboto Slab" sans-serif,
+  $font-size: 14px,
 ) {
   font-family: $font-family;
   font-size: $font-size;
@@ -23,7 +23,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    @include title-text("Roboto" );
+    @include font-text("Roboto" );
 }
 
 $container: 1130px;

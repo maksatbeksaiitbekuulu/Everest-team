@@ -2,9 +2,10 @@
 
 .header{
     background-color: transparentize( $main-header-bg-color , $amount: 0.00);
-    @include title-text("Roboto" );
-    
+    @include font-text("Roboto Condensed");
+    font-weight: 700;
     text-decoration: none;
+    margin-bottom: 0;
 
     &__inner{
         display: flex;
@@ -21,17 +22,14 @@
         }
     
         &--logo{
-         max-width: 100px;
-         text-decoration: none;
-         text-transform: uppercase;
-         font-size: 40px;
          max-width: 250px;
          padding-top: 20px;
       }
     
     }
     &__address{
-        max-width: 700px;  
+        max-width: 700px; 
+        @include font-text("Roboto"); 
 
         &--texts{
             display: flex;
@@ -54,7 +52,6 @@
             padding: 8px 30px;
             color: #FFEF98;
             align-items: center;
-            font-size: 14px;
             font-weight: normal;
             text-decoration: none;
         }  
@@ -80,6 +77,7 @@
     &__navbar{
         max-width: 1100px;
         text-transform: uppercase;
+        font-size: 14px;
         line-height: 19px;
 
         &--menu{
@@ -90,21 +88,22 @@
         }
         &--item{
             width: 170px;
+            min-height: 25px;
             text-align: center;
-            background-color: #D0FFFF;
+            background-color: #0f1f4b;
             border-radius: 50%;
             padding: 10px;
             margin: 40px 20px;
         }
         &--item:hover{
-            background-color: rgb(175, 175, 245);
+            background-color: rgb(175, 223, 245);
         }
         &--link{
             text-decoration: none;
-            color: #000;
+            color: #FFEF98;
         }
         &--link:hover{
-            color: rgb(231, 245, 28);
+            color: rgb(0, 0, 0);
         }
     }
 }
