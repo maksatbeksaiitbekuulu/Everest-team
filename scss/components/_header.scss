@@ -1,0 +1,112 @@
+@import "../vars";
+
+.header{
+    background-color: transparentize( $main-header-bg-color , $amount: 0.00);
+    @include font-text("Roboto Condensed");
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 0;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+
+        &--link {
+            max-width: 100px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 40px;
+            max-width: 250px;
+        }
+    
+        &--logo{
+         max-width: 250px;
+         padding-top: 20px;
+      }
+    
+    }
+    &__address{
+        max-width: 700px; 
+        @include font-text("Roboto"); 
+
+        &--texts{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        &--item{
+            max-width: 300px;
+            text-align: left;
+
+        }
+        &--item + &--item{
+            margin-left: 80px;
+        } 
+        @mixin address {
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 8px 30px;
+            color: #FFEF98;
+            align-items: center;
+            font-weight: normal;
+            text-decoration: none;
+        }  
+        &--location-vector{
+            @include address();
+            background-image: url(../images/vector.png);
+        }    
+        &--location-tell{
+            @include address();
+            padding: 0px 0px 80px 30px;
+            background-image: url(../images/tell.png);
+        }       
+        &--location-email{
+            @include address();
+        }
+        location-vector,
+        location-tell,
+        location-email,:hover{
+            color: rgb(204, 204, 255);
+        }
+    }
+
+    &__navbar{
+        max-width: 1100px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 19px;
+
+        &--menu{
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        &--item{
+            width: 170px;
+            min-height: 25px;
+            text-align: center;
+            background-color: #0f1f4b;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 40px 20px;
+        }
+        &--item:hover{
+            background-color: rgb(175, 223, 245);
+        }
+        &--link{
+            text-decoration: none;
+            color: #FFEF98;
+        }
+        &--link:hover{
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+    
+
