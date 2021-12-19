@@ -32,7 +32,22 @@ $container: 1130px;
    max-width: ($container );
    margin: 0 auto;
    padding: 10px;
-   border: 1px solid white;
+}
+
+
+.footer__icons{
+  &-facebook{
+  background-image: url(../images/facebook.png);
+  }
+  &-twitter{
+  background-image: url(../images/twitter.png);
+  }
+  &-telegram{
+  background-image: url(../images/telegram.png);
+  }
+  &-instagram{
+  background-image: url(../images/instagram.png);
+  }
 }
   
 

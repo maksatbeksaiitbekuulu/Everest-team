@@ -1,5 +1,173 @@
 @import "../vars";
+@import "../mixins";
+    
+
 
 .footer{
-    background-color: transparentize($main-footer-bg-color, $amount: 0.0);
+    background-color: $main-footer-bg-color;
+    margin-top: 0;
+    min-height: 300px;
+    &__logo{
+
+        &--link {
+            @include logo();
+        }
+    
+        &--img{
+         max-width: 250px;
+         padding-top: 10px;
+         padding-right: 20px;
+        } 
+
+    }
+        &__icons{
+            &-facebook{
+                margin-top: 100px;
+                @include footer-icon();
+            }
+            &-twitter{
+                margin-top: 100px;
+                @include footer-icon();
+            }
+            &-telegram{
+                margin-top: 100px;
+                @include footer-icon();
+            }
+            &-instagram{
+                margin-top: 100px;
+                @include footer-icon();
+            }
+    
+        }
+    &__content{
+        display: inline-flex;
+        max-width: 200px;
+        min-height: 250px;
+        flex-wrap: wrap;
+        margin-right: 70px;
+        &--title{
+            @include title();
+            color: white;
+            text-align: center;
+        }
+        
+        &--links,
+        &--link a{
+            list-style: none;
+            text-decoration: none;
+            color: $main-texts-color ;
+        }
+        &--link :hover{
+            color: #65ffff;
+            transition: all 0.3s ease-out;
+        }
+
+        &--contact{
+            background-color: rgb(228, 228, 228);
+            width: 300px;
+            height: 30px;
+            margin: 5px;
+            border-radius: 10px;
+
+            &-textarea{
+                min-height: 70px;
+            }
+            &-button{
+                max-width: 200px;
+                margin: 0 50px ;
+            }
+        }
+    }
 }
+.copytext{
+    text-align: center;
+    color: white;
+}
+
+
+
+/* 
+.footer{
+    @include font-text("Roboto Slab");
+    background-color: $main-footer-bg-color;
+    color: $main-texts-color;
+
+    @mixin footer-content {
+      float: left;
+      max-width: 250px;
+      min-height: 300px;
+      margin-right: 50px;
+    }
+    &__first-content--icons{
+        &-facebook{
+            @include footer-icon();
+        }
+        &-twitter{
+            @include footer-icon();
+        }
+        &-telegram{
+            @include footer-icon();
+        }
+        &-instagram{
+            @include footer-icon();
+        }
+
+    }
+    
+    &__first-content{
+        @include footer-content();
+      &--logo{
+          max-width: 200px;
+      }
+    }
+    @mixin footer-link {
+        list-style: none;
+        text-decoration: none;
+        color: $main-texts-color;
+    }
+    
+    &__second-content{
+        @include footer-content();
+        &--link,
+        &--link a{
+            @include footer-link();
+        }
+        &--link a:hover{
+            color: #65ffff;
+            transition: all 0.3s ease-out;
+        }
+    }
+    &__third-content{
+        @include footer-content();
+        &--links,
+        &--links a{
+            @include footer-link();
+        }
+        &--links a:hover{
+            color: #65ffff;
+            transition: all 0.3s ease-out;
+        }
+    }
+    &__contact-form{
+        min-height: 300px;
+        &--input,
+        &--textarea,
+        &--button{
+            margin: 5px;
+           height: 40px;
+           background-color: rgb(202, 202, 202);
+           border-radius: 15px;
+        }
+        &--textarea{
+            min-height: 100px;
+        }
+    }
+    &__contact-form--input,
+    &__contact-form--textarea,
+    &__contact-form--button{
+        width: 330px;
+    }
+}
+.copyrightText{
+    text-align: center;
+} */
