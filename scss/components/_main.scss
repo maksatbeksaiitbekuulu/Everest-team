@@ -29,7 +29,6 @@
         
         &--link:hover{
             @include button-link-hover();
-            transition: all 0.3s ease-out;
         }
 
         &--img{
@@ -39,14 +38,155 @@
             margin-left: 0 auto;
         }
     }
+}/* 
+.services{
+    .container{
+        padding: 20px;
+    }
+       &title{
+            font-family: "Roboto Condensed" , Roboto;
+            font-weight: normal;
+            color: white;
+            font-size: 24px;
+            text-align: left;
+            padding-left: 45px;
+                }
+                hr{
+                    max-width: 1030px;
+                }
+                &col {
+                    display: grid;
+                grid-column: 1fr 1fr;
+                float: left;
+            }
+        }
+                  .item-services{
+
+        }
+.image{
+                                width: 450px;
+                                height: 360px;
+                                border-radius: 35%;
+                                padding-left: 50px ;
+                                float: left;
+                            }
+                           &__subtitle{
+                          font-family: "Roboto Condensed" "Roboto-slab";
+                            font-size: 24px;
+                          color: $main-texts-color;
+                          text-align: center;
+                        }
+                        &button{
+                            height: 50px;
+
+                            text-align: center;
+                            background-color: rgb(81, 81, 241);
+                            border-radius: 25% 0 25% 0;
+                            text-decoration: none;
+                            font-size: 18px;
+                            &:hover {
+                                color:blueviolet;
+                            }
+                        }
+                        &image{
+                            display: block;
+                             width: $blockwidth;
+                            height: $blockheight;
+                            border-radius: $radius;
+                            float:right;
+                        }
+                       &subtitle{
+                            @include font-text("Roboto Condensed");
+                            font-size: 24px;
+                          color: $main-texts-color;
+                          text-align: center;
+                        }
+&button{
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                            background-color: rgb(81, 81, 241);
+                            border-radius: 25% 0 25% 0;
+                            text-decoration: none;
+                            font-size: 18px;
+                            &:hover {
+                                color:blueviolet;
+                            }
+                        }
+                        &image{
+                            display: block;
+                             width: $blockwidth;
+                            height: $blockheight;
+                            border-radius: $radius;
+                            float:left;
+                        }
+                       &__subtitle{
+                            @include font-text("Roboto Condensed");
+                            font-size: 24px;
+                          color: $main-texts-color;
+                          text-align: center;
+                        }
+&__button{
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                            background-color: rgb(81, 81, 241);
+                            border-radius: 25% 0 25% 0;
+                            text-decoration: none;
+                            font-size: 18px;
+                            &:hover {
+                                color:blueviolet;
+                            }
+                        }
+_services.scss */
+.services{
+    min-height: 1450px; 
+    align-items: center;
+    &__title{
+        @include title();
+        margin: 0;
+    }
+    &__col{
+        display: block;
+    }
+    &__part{
+        min-height: 500px;
+        text-align: center;
+    }
+    &__image{
+        @include services-img();
+        align-items: center;
+        float: left;
+        margin-right: 100px;
+        &-b{
+            float: right;
+            margin: 0;
+        }
+    }
+    &__subtitle{
+        @include font-text("Roboto Slab");
+        font-size: 36px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 40px;
+        padding-top: 50px;
+        margin-bottom: 50px;
+
+        &--button{
+            @include button-link();
+        }
+        &--button:hover{
+            @include button-link-hover();
+        }
+    }
 }
+
+
 .levels{
     min-height: 340px;
-
     &__title{
         @include title();
         text-align: center;
-        margin: 0 auto;
     }
     &__schedule{
         width: 1000px;
@@ -96,4 +236,24 @@ hr{
         font-weight: 600;
     }
 
+}
+.quote{
+    min-height: 500px;
+    background-color: white;
+    &__text{
+        color: black;
+        @include font-text("Roboto Slab");
+        font-size: 32px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 45px;
+        margin-top: 70px;
+
+    }
+    &__img{
+        width: 580px;
+        height: 480px;
+        border-radius: 150px 0px 150px 0px;
+        float: right;
+    }
 }

@@ -26,6 +26,7 @@
 
 @mixin button-link-hover {
     background-color: darken($color: #2285d6, $amount: 3);
+    transition: all 0.3s ease-out;
 }
 @mixin title {
     @include font-text("Roboto Condensed");
@@ -42,4 +43,10 @@
     background-color: #26292e;
     border-radius: 50%;
     margin-left: 5px;
+}
+
+@mixin services-img {
+    width: 500px;
+    height: 370px;
+    border-radius: 100px;
 }
