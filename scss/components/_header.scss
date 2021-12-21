@@ -33,30 +33,16 @@
             margin: 0;
         }
         &--item{
-            max-width: 300px;
-            text-align: left;
-
+            max-width: 350px;
         }
         &--item + &--item{
             margin-left: 80px;
         } 
-        @mixin address {
-            background-repeat: no-repeat;
-            text-align: center;
-            padding: 8px 30px;
-            color: #FFEF98;
-            align-items: center;
-            font-weight: normal;
-            text-decoration: none;
-        }  
         &--location-vector{
-            background-image: url(../images/vector.png);
             @include address();
-        }    
+        }  
         &--location-tell{
-            background-image: url(../images/tell.png);
             @include address();
-            padding: 0px 0px 20px 30px;
         }       
         &--location-email{
             @include address();

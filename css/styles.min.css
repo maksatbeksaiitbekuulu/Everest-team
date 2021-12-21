@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
   padding: 10px; }
 
+/* 
+.header__address--icon{
+  background-image: url(../images/vector.png);
+} */
 .footer__icons-facebook {
   background-image: url(../images/facebook.png); }
 
@@ -85,13 +89,10 @@ body {
               flex-wrap: wrap;
       margin: 0; }
     .header__address--item {
-      max-width: 300px;
-      text-align: left; }
+      max-width: 350px; }
     .header__address--item + .header__address--item {
       margin-left: 80px; }
     .header__address--location-vector {
-      background-image: url(../images/vector.png);
-      background-repeat: no-repeat;
       text-align: center;
       padding: 8px 30px;
       color: #FFEF98;
@@ -102,8 +103,6 @@ body {
       font-weight: normal;
       text-decoration: none; }
     .header__address--location-tell {
-      background-image: url(../images/tell.png);
-      background-repeat: no-repeat;
       text-align: center;
       padding: 8px 30px;
       color: #FFEF98;
@@ -112,10 +111,8 @@ body {
           -ms-flex-align: center;
               align-items: center;
       font-weight: normal;
-      text-decoration: none;
-      padding: 0px 0px 20px 30px; }
+      text-decoration: none; }
     .header__address--location-email {
-      background-repeat: no-repeat;
       text-align: center;
       padding: 8px 30px;
       color: #FFEF98;
@@ -230,107 +227,6 @@ body {
               border-radius: 90% 0% 0% 0%;
       margin-left: 0 auto; }
 
-/* 
-.services{
-    .container{
-        padding: 20px;
-    }
-       &title{
-            font-family: "Roboto Condensed" , Roboto;
-            font-weight: normal;
-            color: white;
-            font-size: 24px;
-            text-align: left;
-            padding-left: 45px;
-                }
-                hr{
-                    max-width: 1030px;
-                }
-                &col {
-                    display: grid;
-                grid-column: 1fr 1fr;
-                float: left;
-            }
-        }
-                  .item-services{
-
-        }
-.image{
-                                width: 450px;
-                                height: 360px;
-                                border-radius: 35%;
-                                padding-left: 50px ;
-                                float: left;
-                            }
-                           &__subtitle{
-                          font-family: "Roboto Condensed" "Roboto-slab";
-                            font-size: 24px;
-                          color: $main-texts-color;
-                          text-align: center;
-                        }
-                        &button{
-                            height: 50px;
-
-                            text-align: center;
-                            background-color: rgb(81, 81, 241);
-                            border-radius: 25% 0 25% 0;
-                            text-decoration: none;
-                            font-size: 18px;
-                            &:hover {
-                                color:blueviolet;
-                            }
-                        }
-                        &image{
-                            display: block;
-                             width: $blockwidth;
-                            height: $blockheight;
-                            border-radius: $radius;
-                            float:right;
-                        }
-                       &subtitle{
-                            @include font-text("Roboto Condensed");
-                            font-size: 24px;
-                          color: $main-texts-color;
-                          text-align: center;
-                        }
-&button{
-                            height: 50px;
-                            line-height: 50px;
-                            text-align: center;
-                            background-color: rgb(81, 81, 241);
-                            border-radius: 25% 0 25% 0;
-                            text-decoration: none;
-                            font-size: 18px;
-                            &:hover {
-                                color:blueviolet;
-                            }
-                        }
-                        &image{
-                            display: block;
-                             width: $blockwidth;
-                            height: $blockheight;
-                            border-radius: $radius;
-                            float:left;
-                        }
-                       &__subtitle{
-                            @include font-text("Roboto Condensed");
-                            font-size: 24px;
-                          color: $main-texts-color;
-                          text-align: center;
-                        }
-&__button{
-                            height: 50px;
-                            line-height: 50px;
-                            text-align: center;
-                            background-color: rgb(81, 81, 241);
-                            border-radius: 25% 0 25% 0;
-                            text-decoration: none;
-                            font-size: 18px;
-                            &:hover {
-                                color:blueviolet;
-                            }
-                        }
-_services.scss */
 .services {
   min-height: 1450px;
   -webkit-box-align: center;
@@ -523,8 +419,6 @@ hr {
     width: 40px;
     height: 40px;
     background-color: #26292e;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
     margin-left: 5px; }
   .footer__icons-twitter {
     margin-top: 100px;
@@ -537,8 +431,6 @@ hr {
     width: 40px;
     height: 40px;
     background-color: #26292e;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
     margin-left: 5px; }
   .footer__icons-telegram {
     margin-top: 100px;
@@ -551,8 +443,6 @@ hr {
     width: 40px;
     height: 40px;
     background-color: #26292e;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
     margin-left: 5px; }
   .footer__icons-instagram {
     margin-top: 100px;
@@ -565,8 +455,6 @@ hr {
     width: 40px;
     height: 40px;
     background-color: #26292e;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
     margin-left: 5px; }
   .footer__content {
     display: -webkit-inline-box;
