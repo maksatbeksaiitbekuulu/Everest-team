@@ -22,10 +22,9 @@ body {
   margin: 0 auto;
   padding: 10px; }
 
-/* 
-.header__address--icon{
-  background-image: url(../images/vector.png);
-} */
+.header__address--icon {
+  background-image: url(../images/vector.png); }
+
 .footer__icons-facebook {
   background-image: url(../images/facebook.png); }
 
@@ -228,27 +227,6 @@ body {
       margin-left: 0 auto; }
 
 .services {
-  padding: 1em;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 28px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #5AB9EF;
-  max-width: 250px;
-  min-height: 50px;
-  padding: 10px 40px;
-  text-align: center;
-  -webkit-border-radius: 100px 0px 100px 0px;
-          border-radius: 100px 0px 100px 0px; }
-  .services__title {
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    padding: 45px; }
-
-.services {
   min-height: 1450px;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -342,7 +320,7 @@ body {
     max-width: 900px;
     min-height: 50px;
     margin: 1% auto; }
-    .levels__text--strong {
+    .levels__text----strong {
       font-weight: 600; }
 
 hr {
