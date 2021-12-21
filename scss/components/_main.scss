@@ -15,7 +15,7 @@
             float: left;
         }
 
-        &--note{
+        &-note{
             @include font-text("Roboto Slab");
             font-size: 36px;
             font-weight: normal;
@@ -23,15 +23,15 @@
             line-height: 40px;
             margin-top: 50%;
         }
-        &--link{
+        &-link{
             @include button-link();
         }
         
-        &--link:hover{
+        &-link:hover{
             @include button-link-hover();
         }
 
-        &--img{
+        &-img{
             max-width: 750px;
             min-height: 600px;
             border-radius: 90% 0% 0% 0%;
@@ -58,7 +58,7 @@
         align-items: center;
         float: left;
         margin-right: 100px;
-        &-b{
+        &-second{
             float: right;
             margin: 0;
         }
@@ -72,10 +72,10 @@
         padding-top: 50px;
         margin-bottom: 50px;
 
-        &--button{
+        &-button{
             @include button-link();
         }
-        &--button:hover{
+        &-button:hover{
             @include button-link-hover();
         }
     }
@@ -100,8 +100,9 @@
         min-height: 50px;
         margin: 1% auto;
 
-        &----strong{
+        &-strong{
             font-weight: 600;
+            
         }
     }
 }
@@ -131,7 +132,7 @@ hr{
        width: 300px;
        height: 230px;
     }
-    &__text--title{
+    &__text-title{
         font-size: 18px;
         font-weight: 600;
     }
@@ -140,6 +141,12 @@ hr{
 .quote{
     min-height: 500px;
     background-color: white;
+    &__max{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        align-items: center;
+    }
     &__text{
         color: black;
         @include font-text("Roboto Slab");
@@ -150,10 +157,8 @@ hr{
         margin-top: 70px;
 
     }
-    &__img{
-        width: 580px;
-        height: 480px;
-        border-radius: 150px 0px 150px 0px;
-        float: right;
+    &__img {
+        max-width: 100%;
+        border-radius: 200px 0px 200px 0px;
     }
 }

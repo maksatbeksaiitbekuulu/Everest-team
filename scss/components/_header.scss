@@ -11,12 +11,12 @@
         align-items: center;
         padding-top: 20px;
 
-        &--link {
+        &-link {
             @include logo();
             font-weight: 700;
         }
     
-        &--logo{
+        &-logo{
          max-width: 250px;
          padding-top: 20px;
         }
@@ -32,19 +32,19 @@
             flex-wrap: wrap;
             margin: 0;
         }
-        &--item{
+        &-item{
             max-width: 350px;
         }
-        &--item + &--item{
+        &-item + &--item{
             margin-left: 80px;
         } 
-        &--location-vector{
+        &-location-vector{
             @include address();
         }  
-        &--location-tell{
+        &-location-tell{
             @include address();
         }       
-        &--location-email{
+        &-location-email{
             @include address();
         }
         location-vector,
@@ -67,7 +67,7 @@
             flex-wrap: wrap;
             margin: 0;
         }
-        &--item{
+        &-item{
             width: 170px;
             min-height: 25px;
             text-align: center;
@@ -76,15 +76,15 @@
             padding: 10px;
             margin: 40px 20px;
         }
-        &--item:hover{
+        &-item:hover{
             background-color: lighten($color: #0f1f4b, $amount: 5);
             transition: all 0.3s ease-out;
         }
-        &--link{
+        &-link{
             text-decoration: none;
             color: #FFEF98;
         }
-        &--link:hover{
+        &-link:hover{
             color: #65ffff;
             transition: all 0.3s ease-out;
         }
