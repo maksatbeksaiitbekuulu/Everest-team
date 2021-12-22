@@ -40,7 +40,7 @@
     }
 }
 .services{
-    min-height: 1450px; 
+    min-height: 1450px;
     align-items: center;
     &__title{
         @include title();
@@ -118,9 +118,9 @@ hr{
         text-transform: uppercase;
     }
     &__block{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
     }
     &__icons{
         max-width: 300px;
