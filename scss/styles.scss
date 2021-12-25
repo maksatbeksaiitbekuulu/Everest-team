@@ -1,4 +1,7 @@
-
+text{
+  text-decoration: none;
+}
+/* 
 html{
     box-sizing: border-box;
 }
@@ -53,9 +56,8 @@ $container: 1130px;
   background-image: url(../images/instagram.png);
   }
 }
-
-
 @import "./components/header";
 @import "./components/main";
 @import "./components/footer";
 @import "./vars";
+ */
