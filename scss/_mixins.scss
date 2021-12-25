@@ -1,4 +1,16 @@
-/* @mixin logo {
+
+@mixin font-text(
+    $font-family: "'Roboto','Roboto Condensed','Roboto Slab" sans-serif,
+    $font-size: 14px,
+  ) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 24px;
+  }
+
+@mixin logo {
     @include font-text("Roboto Condensed");
     text-decoration: none;
     text-transform: uppercase;
@@ -9,10 +21,8 @@
 }
 
 @mixin address {
-    text-align: center;
     padding: 8px 30px;
     color: #FFEF98;
-    align-items: center;
     font-weight: normal;
     text-decoration: none;
 }  
@@ -59,4 +69,4 @@
     width: 500px;
     height: 370px;
     border-radius: 100px;
-} */
+}

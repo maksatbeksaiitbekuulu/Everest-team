@@ -1,40 +1,30 @@
 @import "../vars";
 @import "../mixins";
-/* 
+
 .header{
     background-color: transparentize( $main-header-bg-color , $amount: 0.00);
-    text-decoration: none;
-    margin-bottom: 0;
-
+    padding: 30px 0;
     &__inner{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 20px;
 
         &-link {
             @include logo();
             font-weight: 700;
         }
-    
         &-logo{
-         max-width: 250px;
-         padding-top: 20px;
+           max-width: 300;
+           max-height: 150px;
         }
-    
     }
     &__address{
-        max-width: 700px; 
 
         &--texts{
             display: flex;
             list-style: none;
             align-items: center;
-            flex-wrap: wrap;
             margin: 0;
         }
         &-item{
-            max-width: 350px;
+            max-width: 450px;
         }
         &-item + &--item{
             margin-left: 80px;
@@ -57,15 +47,11 @@
 
     &__navbar{
         @include logo();
-        max-width: 1100px;
         font-weight: 600;
         font-size: 14px;
         line-height: 19px;
 
         &--menu{
-            display: flex;
-            list-style: none;
-            flex-wrap: wrap;
             margin: 0;
         }
         &-item{
@@ -91,6 +77,3 @@
         }
     }
 }
- */
-    
-
