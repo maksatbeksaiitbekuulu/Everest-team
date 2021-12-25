@@ -7,6 +7,7 @@
     <title>IT Consulting</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,48 +19,53 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__inner">
-                    <a class="header__inner-link" href="#">
+            <div class="row align-items-center py-5  header__inner">
+                <div class="col-12 col-md-6 navbar-expand-lg">
+                    <a class="navbar-brand header__inner-link" href="#">
                         <img class="header__inner-logo" src="images/JOGO.jpg" alt="Logo">
                     </a>
-                <div class="header__address">
-                    <ul class="header__address--texts">
-                        <li class="header__address-item">
+                </div>
+                <div class="col-12 col-md-2 py-2 text-center header__address">
+                    <div class="header__address--texts">
+                        <div class="  header__address-item">
                             
                             <span class="header__address-icon-vector"></span>
                             <a href="#" class="header__address-location-vector">    Улица Исакеева,2а/2, Бишкек
                             </a>
-                        </li>
-
-                        <li class="header__address-item">
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-12 col-md-4 text-center header__address">
+                    <div class="header__address--texts">
+                        <div class=" header__address-item">
                             <span class="header__address-icon-tell"></span>
-                            <a href="#" class="header__address-location-tell ">
+                            <a href="#" class=" header__address-location-tell ">
                                 tell:      +996 709 11 10 11 
                             </a>
                             <br>
                             <a href="#" class="header__address-location-email ">
                                 email: ivanivanov.@gmail.com
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <nav class="header__navbar">
-                <ul class="header__navbar--menu">
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">Главная</a>
+            <nav class=" header__navbar">
+                <ul class="nav  nav-justified header__navbar--menu">
+                    <li class="nav-item header__navbar-item">
+                        <a href="#" class="nav-link header__navbar-link">Главная</a>
                     </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">О компании</a>
+                    <li class="nav-item header__navbar-item">
+                        <a href="#" class="nav-link header__navbar-link">О компании</a>
                     </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">Услуги</a>
+                    <li class="nav-item header__navbar-item">
+                        <a href="#" class="nav-link header__navbar-link">Услуги</a>
                     </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">Новоти</a>
+                    <li class="nav-item header__navbar-item">
+                        <a href="#" class="nav-link header__navbar-link">Новоти</a>
                     </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">Контакты</a>
+                    <li class="nav-item header__navbar-item">
+                        <a href="#" class=" nav-link header__navbar-link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -206,6 +212,6 @@
     </div>
 </footer>
 
-
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
