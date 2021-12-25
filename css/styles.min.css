@@ -46,7 +46,8 @@ $container: 1130px;
     font-size: 40px;
     text-align: center;
     color: #fff;
-    font-weight: 700; }
+    font-weight: 700;
+    max-width: 300px; }
   .header__inner-logo {
     max-width: 300;
     max-height: 150px; }
@@ -62,7 +63,7 @@ $container: 1130px;
             align-items: center;
     margin: 0; }
   .header__address-item {
-    max-width: 450px; }
+    max-width: 350px; }
   .header__address-item + .header__address--item {
     margin-left: 80px; }
   .header__address-location-vector {
@@ -420,8 +421,7 @@ hr {
       font-size: 28px;
       font-weight: 700;
       line-height: 30px;
-      color: white;
-      text-align: center; }
+      color: white; }
     .footer__content--links,
     .footer__content-link a {
       list-style: none;
@@ -448,19 +448,13 @@ hr {
   text-align: center;
   color: white; }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+.about-first {
+  background-color: rgba(4, 21, 64, 0.905); }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+.about-third {
+  background-color: rgba(4, 21, 64, 0.905); }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Roboto";
   font-size: sans-serif;
   font-weight: normal;

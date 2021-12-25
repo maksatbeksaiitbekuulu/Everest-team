@@ -9,6 +9,7 @@
         &-link {
             @include logo();
             font-weight: 700;
+            max-width: 300px;
         }
         &-logo{
            max-width: 300;
@@ -24,7 +25,7 @@
             margin: 0;
         }
         &-item{
-            max-width: 450px;
+            max-width: 350px;
         }
         &-item + &--item{
             margin-left: 80px;

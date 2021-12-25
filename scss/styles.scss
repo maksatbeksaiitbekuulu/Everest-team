@@ -38,21 +38,10 @@ $container: 1130px;
 @import "./components/main";
 @import "./components/footer";
 @import "./vars";
-
-html{
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
-}
+@import "./components/about";
 
 
 body{
-    margin: 0;
-    padding: 0;
     @include font-text("Roboto", sans-serif);
 }
 .container{

@@ -1,0 +1,9 @@
+@import "../vars";
+@import "../mixins";
+
+.about-first{
+    background-color: transparentize($main-bg-color, $amount: 0.095);
+}
+.about-third{
+    background-color: transparentize($main-bg-color, $amount: 0.095);
+}
