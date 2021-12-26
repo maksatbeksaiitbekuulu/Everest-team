@@ -53,39 +53,12 @@ $container: 1130px;
     max-height: 150px;
     -o-object-fit: cover;
        object-fit: cover; }
-  .header__address--texts {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0; }
-  .header__address-item {
-    max-width: 350px; }
-  .header__address-item + .header__address--item {
-    margin-left: 80px; }
-  .header__address-location-vector {
-    padding: 8px 30px;
+  .header__address-location {
+    margin-left: 20px;
     color: #FFEF98;
     font-weight: normal;
     text-decoration: none; }
-  .header__address-location-tell {
-    padding: 8px 30px;
-    color: #FFEF98;
-    font-weight: normal;
-    text-decoration: none; }
-  .header__address-location-email {
-    padding: 8px 30px;
-    color: #FFEF98;
-    font-weight: normal;
-    text-decoration: none; }
-  .header__address location-vector,
-  .header__address location-tell,
-  .header__address location-email, .header__address :hover {
+  .header__address-location:hover {
     color: #ccccff; }
   .header__navbar {
     font-family: "Roboto Condensed";
@@ -99,15 +72,14 @@ $container: 1130px;
     font-size: 40px;
     text-align: center;
     color: #fff;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19px; }
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px; }
     .header__navbar--menu {
       margin: 0; }
     .header__navbar-item {
-      width: 170px;
-      min-height: 25px;
-      text-align: center;
+      min-width: 150px;
+      text-align: center center;
       background-color: #0f1f4b;
       -webkit-border-radius: 50%;
               border-radius: 50%;

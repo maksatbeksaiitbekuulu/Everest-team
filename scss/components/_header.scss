@@ -18,48 +18,27 @@
         }
     }
     &__address{
-
-        &--texts{
-            display: flex;
-            list-style: none;
-            align-items: center;
-            margin: 0;
-        }
-        &-item{
-            max-width: 350px;
-        }
-        &-item + &--item{
-            margin-left: 80px;
-        } 
-        &-location-vector{
+        
+        &-location{
             @include address();
         }  
-        &-location-tell{
-            @include address();
-        }       
-        &-location-email{
-            @include address();
-        }
-        location-vector,
-        location-tell,
-        location-email,:hover{
+        &-location:hover{
             color: rgb(204, 204, 255);
         }
     }
 
     &__navbar{
         @include logo();
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 19px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
 
         &--menu{
             margin: 0;
         }
         &-item{
-            width: 170px;
-            min-height: 25px;
-            text-align: center;
+            min-width: 150px;
+            text-align: center center;
             background-color: #0f1f4b;
             border-radius: 50%;
             padding: 10px;
