@@ -1,9 +1,60 @@
 @import "../vars";
 @import "../mixins";
 
-.about-first{
+.main__about{
     background-color: transparentize($main-bg-color, $amount: 0.095);
+    color: $main-texts-color;
 }
+
+.about-first{
+    &__texts{
+        &-title{
+            @include title();
+            margin: 30px 0;
+            font-size: 36px;
+        }
+        &-word{
+            font-size: 18px;
+            font-style: italic;
+        }
+        &-link{
+            color: aqua;
+        }
+    }
+
+    &__images-first{
+        padding-top: 150px;
+    }
+    &__img{
+        border-radius: 50px;
+    }
+    
+}
+
+.about-second{
+    background-color: white;
+    color: black;
+}
+
 .about-third{
-    background-color: transparentize($main-bg-color, $amount: 0.095);
+
+    &__texts{
+        text-align: center;
+    }
+
+    &__diagramm-img{
+        max-width: 450px;
+
+    }
+
+    &__texts-text{
+        text-align: left;
+    }
+
+    &__images-first{
+        padding-top: 150px;
+    }
+    &__img{
+        border-radius: 50px;
+    }
 }

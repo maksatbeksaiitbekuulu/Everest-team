@@ -39,11 +39,11 @@ $container: 1130px;
 @import "./components/footer";
 @import "./vars";
 @import "./components/about";
+@import "./components/news";
+@import "./components/services";
+@import "./components/contacts";
 
 
 body{
     @include font-text("Roboto", sans-serif);
-}
-.container{
-  border: 1px solid yellow;
 }

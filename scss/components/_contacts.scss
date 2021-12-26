@@ -1,0 +1,41 @@
+@import "../vars";
+@import "../mixins";
+
+
+.contacts{
+
+    &__name{
+        background-color: transparentize($main-bg-color, $amount: 0.095);
+        color: $main-texts-color;
+
+        &-title{
+            @include title();
+            font-size: 38px;
+            padding: 100px 50px ;
+        }
+    }
+
+    &__address{
+
+        &-title{
+            font-size: 24px;
+            padding:  30px;
+        }
+
+        &--texts{
+            padding: 30px;
+        }
+        &-text-question{
+            display: block;
+        }
+    }
+
+    &__map{
+        text-align: center;
+
+        &-link{
+            width: 100%;
+            min-height: 500px;
+        }
+    }
+}
