@@ -1,67 +1,44 @@
-@import "../vars";
-@import "../mixins";
 
-.main{
-    background-color: transparentize($main-bg-color, $amount: 0.095);
-    color: $main-texts-color;
-
-    &__hero{
-        min-height: 600px;
-
-        &--button{
-            max-width: 350px;
-            min-height: 50px;
-            text-align: center;
-            float: left;
-        }
-
-        &-note{
-            @include font-text("Roboto Slab");
-            font-size: 36px;
-            font-weight: normal;
-            text-align: center;
-            line-height: 40px;
-            margin-top: 50%;
-        }
-        &-link{
-            @include button-link();
-        }
-        
-        &-link:hover{
-            @include button-link-hover();
-        }
-
-        &-img{
-            max-width: 750px;
-            min-height: 600px;
-            border-radius: 90% 0% 0% 0%;
-            margin-left: 0 auto;
-        }
-    }
-}
+ @import "../vars";
+ @import "../mixins";
+ 
+ .main{
+     background-color: transparentize($main-bg-color, $amount: 0.095);
+     color: $main-texts-color;
+ 
+     &__hero{
+ 
+ 
+         &-note{
+             @include font-text("Roboto Slab");
+             font-size: 36px;
+             font-weight: normal;
+             text-align: center;
+             line-height: 40px;
+             margin: 50px auto;
+         }
+         &-link{
+             @include button-link();
+         }
+         
+         &-link:hover{
+             @include button-link-hover();
+         }
+ 
+         &-img{
+             border-radius: 50px 0px;
+         }
+     }
+ }
 .services{
-    min-height: 1450px;
-    align-items: center;
     &__title{
         @include title();
-        margin: 0;
+        font-size: 40px;
     }
-    &__col{
-        display: block;
-    }
-    &__part{
-        min-height: 500px;
-        text-align: center;
-    }
+
     &__image{
-        @include services-img();
         align-items: center;
-        float: left;
-        margin-right: 100px;
-        &-second{
-            float: right;
-            margin: 0;
-        }
+        border-radius: 50px;
     }
     &__subtitle{
         @include font-text("Roboto Slab");
@@ -69,8 +46,11 @@
         font-weight: normal;
         font-style: normal;
         line-height: 40px;
-        padding-top: 50px;
-        margin-bottom: 50px;
+        text-align: center;
+
+        &-text{
+            margin: 50px 0;
+        }
 
         &-button{
             @include button-link();
@@ -80,25 +60,22 @@
         }
     }
 }
-
-
 .levels{
-    min-height: 340px;
+    text-align: center;
     &__title{
         @include title();
-        text-align: center;
     }
     &__schedule{
-        width: 1000px;
-        margin-left: 5%;
-        border-radius: 100px;
-        margin-top: 10px;
+        width: 80%;
+        border-radius: 15%;
+        margin: 50px 0;
     }
     
     &__text{
-        max-width: 900px;
-        min-height: 50px;
-        margin: 1% auto;
+        max-width: 80%;
+        text-align: left;
+        margin: 15px auto;
+
 
         &-strong{
             font-weight: 600;
@@ -111,16 +88,21 @@ hr{
     margin: 0 auto;
 }
 
+
+
+
+
 .why{
     &__title{
         @include title();
-        margin-bottom: 0;
         text-transform: uppercase;
     }
     &__block{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
+        grid-gap: 80px;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     &__icons{
         max-width: 300px;
@@ -129,8 +111,7 @@ hr{
         list-style: none;
     }
     &__icon{
-       width: 300px;
-       height: 230px;
+        height: 300px;
     }
     &__text-title{
         font-size: 18px;
@@ -139,14 +120,7 @@ hr{
 
 }
 .quote{
-    min-height: 500px;
     background-color: white;
-    &__max{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1em;
-        align-items: center;
-    }
     &__text{
         color: black;
         @include font-text("Roboto Slab");
@@ -158,7 +132,8 @@ hr{
 
     }
     &__img {
-        max-width: 100%;
-        border-radius: 200px 0px 200px 0px;
+        height: 600px;
+        border-radius: 100px 0px 100px 0px;
+        object-fit: cover;
     }
 }

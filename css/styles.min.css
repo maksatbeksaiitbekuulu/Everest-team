@@ -102,91 +102,7 @@ $container: 1130px;
 .main {
   background-color: rgba(4, 21, 64, 0.905);
   color: #fff; }
-  .main__hero {
-    min-height: 600px; }
-    .main__hero--button {
-      max-width: 350px;
-      min-height: 50px;
-      text-align: center;
-      float: left; }
-    .main__hero-note {
-      font-family: "Roboto Slab";
-      font-size: 14px;
-      font-weight: normal;
-      font-style: normal;
-      line-height: 24px;
-      font-size: 36px;
-      font-weight: normal;
-      text-align: center;
-      line-height: 40px;
-      margin-top: 50%; }
-    .main__hero-link {
-      font-family: "Roboto Condensed";
-      font-size: 14px;
-      font-weight: normal;
-      font-style: normal;
-      line-height: 24px;
-      font-size: 16px;
-      font-weight: normal;
-      line-height: 28px;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #fff;
-      background-color: #5AB9EF;
-      max-width: 250px;
-      min-height: 50px;
-      padding: 10px 40px;
-      text-align: center;
-      -webkit-border-radius: 100px 0px 100px 0px;
-              border-radius: 100px 0px 100px 0px; }
-    .main__hero-link:hover {
-      background-color: #207dc9;
-      -webkit-transition: all 0.3s ease-out;
-      -o-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
-    .main__hero-img {
-      max-width: 750px;
-      min-height: 600px;
-      -webkit-border-radius: 90% 0% 0% 0%;
-              border-radius: 90% 0% 0% 0%;
-      margin-left: 0 auto; }
-
-.services {
-  min-height: 1450px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .services__title {
-    font-family: "Roboto Condensed";
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 24px;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 30px;
-    margin: 0; }
-  .services__col {
-    display: block; }
-  .services__part {
-    min-height: 500px;
-    text-align: center; }
-  .services__image {
-    width: 500px;
-    height: 370px;
-    -webkit-border-radius: 100px;
-            border-radius: 100px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    float: left;
-    margin-right: 100px; }
-    .services__image-second {
-      float: right;
-      margin: 0; }
-  .services__subtitle {
+  .main__hero-note {
     font-family: "Roboto Slab";
     font-size: 14px;
     font-weight: normal;
@@ -194,37 +110,96 @@ $container: 1130px;
     line-height: 24px;
     font-size: 36px;
     font-weight: normal;
-    font-style: normal;
+    text-align: center;
     line-height: 40px;
-    padding-top: 50px;
-    margin-bottom: 50px; }
-    .services__subtitle-button {
-      font-family: "Roboto Condensed";
-      font-size: 14px;
-      font-weight: normal;
-      font-style: normal;
-      line-height: 24px;
-      font-size: 16px;
-      font-weight: normal;
-      line-height: 28px;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #fff;
-      background-color: #5AB9EF;
-      max-width: 250px;
-      min-height: 50px;
-      padding: 10px 40px;
-      text-align: center;
-      -webkit-border-radius: 100px 0px 100px 0px;
-              border-radius: 100px 0px 100px 0px; }
-    .services__subtitle-button:hover {
-      background-color: #207dc9;
-      -webkit-transition: all 0.3s ease-out;
-      -o-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
+    margin: 50px auto; }
+  .main__hero-link {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5AB9EF;
+    max-width: 250px;
+    min-height: 50px;
+    padding: 10px 40px;
+    text-align: center;
+    -webkit-border-radius: 100px 0px 100px 0px;
+            border-radius: 100px 0px 100px 0px; }
+  .main__hero-link:hover {
+    background-color: #207dc9;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .main__hero-img {
+    -webkit-border-radius: 50px 0px;
+            border-radius: 50px 0px; }
+
+.services__title {
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 40px; }
+
+.services__image {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 50px;
+          border-radius: 50px; }
+
+.services__subtitle {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 40px;
+  text-align: center; }
+  .services__subtitle-text {
+    margin: 50px 0; }
+  .services__subtitle-button {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5AB9EF;
+    max-width: 250px;
+    min-height: 50px;
+    padding: 10px 40px;
+    text-align: center;
+    -webkit-border-radius: 100px 0px 100px 0px;
+            border-radius: 100px 0px 100px 0px; }
+  .services__subtitle-button:hover {
+    background-color: #207dc9;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
 
 .levels {
-  min-height: 340px; }
+  text-align: center; }
   .levels__title {
     font-family: "Roboto Condensed";
     font-size: 14px;
@@ -233,18 +208,16 @@ $container: 1130px;
     line-height: 24px;
     font-size: 28px;
     font-weight: 700;
-    line-height: 30px;
-    text-align: center; }
+    line-height: 30px; }
   .levels__schedule {
-    width: 1000px;
-    margin-left: 5%;
-    -webkit-border-radius: 100px;
-            border-radius: 100px;
-    margin-top: 10px; }
+    width: 80%;
+    -webkit-border-radius: 15%;
+            border-radius: 15%;
+    margin: 50px 0; }
   .levels__text {
-    max-width: 900px;
-    min-height: 50px;
-    margin: 1% auto; }
+    max-width: 80%;
+    text-align: left;
+    margin: 15px auto; }
     .levels__text-strong {
       font-weight: 600; }
 
@@ -261,7 +234,6 @@ hr {
   font-size: 28px;
   font-weight: 700;
   line-height: 30px;
-  margin-bottom: 0;
   text-transform: uppercase; }
 
 .why__block {
@@ -269,7 +241,13 @@ hr {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px; }
+  grid-gap: 80px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
 
 .why__icons {
   max-width: 300px;
@@ -278,26 +256,14 @@ hr {
   list-style: none; }
 
 .why__icon {
-  width: 300px;
-  height: 230px; }
+  height: 300px; }
 
 .why__text-title {
   font-size: 18px;
   font-weight: 600; }
 
 .quote {
-  min-height: 500px;
   background-color: white; }
-  .quote__max {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
   .quote__text {
     color: black;
     font-family: "Roboto Slab";
@@ -311,9 +277,11 @@ hr {
     line-height: 45px;
     margin-top: 70px; }
   .quote__img {
-    max-width: 100%;
-    -webkit-border-radius: 200px 0px 200px 0px;
-            border-radius: 200px 0px 200px 0px; }
+    height: 600px;
+    -webkit-border-radius: 100px 0px 100px 0px;
+            border-radius: 100px 0px 100px 0px;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .footer {
   background-color: #26292e; }
