@@ -1,0 +1,17 @@
+@import "../vars";
+@import "../mixins";
+
+
+
+.service__title{
+    font-size: 46px;
+    font-family: "Roboto condensed";
+    color:#fff;
+    background-color: transparentize($main-bg-color, $amount: 0.095);
+    &-text{
+        padding: 8%;
+    }
+}
+.text-break {
+    padding: 50px 0;
+}

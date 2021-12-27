@@ -484,6 +484,17 @@ hr {
     .news__videos-video {
       padding: 15px; }
 
+.service__title {
+  font-size: 46px;
+  font-family: "Roboto condensed";
+  color: #fff;
+  background-color: rgba(4, 21, 64, 0.905); }
+  .service__title-text {
+    padding: 8%; }
+
+.text-break {
+  padding: 50px 0; }
+
 .contacts__name {
   background-color: rgba(4, 21, 64, 0.905);
   color: #fff; }
