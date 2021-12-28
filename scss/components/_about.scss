@@ -22,11 +22,26 @@
         }
     }
 
-    &__images-first{
-        padding-top: 150px;
+    &__images{
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+        &-first{
+            animation-timing-function: linear;
+        }
+        &-second{
+            animation-timing-function: ease-out;
+        }
     }
+    
     &__img{
         border-radius: 50px;
+    }
+    @keyframes bounce {
+      50% {
+        padding-top: 150px;
+      }
     }
     
 }
@@ -51,10 +66,25 @@
         text-align: left;
     }
 
-    &__images-first{
-        padding-top: 150px;
+    &__images{
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        
+        &-first{
+            animation-timing-function: ease-out;
+        }
+        &-second{
+            animation-timing-function: linear;
+        }
     }
     &__img{
         border-radius: 50px;
     }
+    @keyframes bounce {
+      50% {
+        padding-top: 80px;
+      }
+    }
+    
 }

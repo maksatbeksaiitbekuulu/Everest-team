@@ -413,12 +413,31 @@ hr {
 .about-first__texts-link {
   color: aqua; }
 
-.about-first__images-first {
-  padding-top: 150px; }
+.about-first__images {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+  .about-first__images-first {
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+  .about-first__images-second {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
 
 .about-first__img {
   -webkit-border-radius: 50px;
           border-radius: 50px; }
+
+@-webkit-keyframes bounce {
+  50% {
+    padding-top: 150px; } }
+
+@keyframes bounce {
+  50% {
+    padding-top: 150px; } }
 
 .about-second {
   background-color: white;
@@ -433,12 +452,27 @@ hr {
 .about-third__texts-text {
   text-align: left; }
 
-.about-third__images-first {
-  padding-top: 150px; }
+.about-third__images {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+  .about-third__images-first {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
+  .about-third__images-second {
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
 
 .about-third__img {
   -webkit-border-radius: 50px;
           border-radius: 50px; }
+
+@keyframes bounce {
+  50% {
+    padding-top: 80px; } }
 
 .news {
   background-color: rgba(4, 21, 64, 0.905);
