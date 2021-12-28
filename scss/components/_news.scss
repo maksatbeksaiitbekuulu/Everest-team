@@ -26,6 +26,10 @@
         margin-left: auto;
     }
 
+    &__img {
+        border-radius:  50px 0 0 50px ;
+    }
+
     &-third{
         background-color: white;
         min-height: 500px;
@@ -42,6 +46,14 @@
 
         &-video{
             padding: 15px;
+
+            &-first{
+                border-radius: 50px 50px 50px 0;
+            }
+
+            &-second{
+                border-radius: 50px 0 50px 50px;
+            }
         }
     }
 }

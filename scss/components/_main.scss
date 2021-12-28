@@ -11,11 +11,15 @@
  
          &-note{
              @include font-text("Roboto Slab");
-             font-size: 36px;
+             font-size: 32px;
              font-weight: normal;
              text-align: center;
-             line-height: 40px;
-             margin: 50px auto;
+             line-height: 38px;
+             margin: 0 auto 30px auto;
+         }
+
+         &--button{
+             margin: 30px 0;
          }
          &-link{
              @include button-link();
@@ -36,9 +40,16 @@
         font-size: 40px;
     }
 
+
     &__image{
         align-items: center;
         border-radius: 50px;
+    }
+    &__col{
+        margin: 20px 0;
+        &-left{
+            margin-bottom: 30px;
+        }
     }
     &__subtitle{
         @include font-text("Roboto Slab");
@@ -47,6 +58,7 @@
         font-style: normal;
         line-height: 40px;
         text-align: center;
+        margin-bottom: 50px;
 
         &-text{
             margin: 50px 0;
@@ -62,13 +74,14 @@
 }
 .levels{
     text-align: center;
+    padding-bottom: 20px;
     &__title{
         @include title();
     }
     &__schedule{
         width: 80%;
         border-radius: 15%;
-        margin: 50px 0;
+        margin: 20px 0;
     }
     
     &__text{
@@ -100,18 +113,14 @@ hr{
     &__block{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 80px;
+        grid-gap: 50px;
         flex-wrap: wrap;
         justify-content: space-around;
     }
     &__icons{
         max-width: 300px;
-        min-height: 100px;
         text-align: center;
         list-style: none;
-    }
-    &__icon{
-        height: 300px;
     }
     &__text-title{
         font-size: 18px;
@@ -128,8 +137,6 @@ hr{
         font-weight: normal;
         font-style: normal;
         line-height: 45px;
-        margin-top: 70px;
-
     }
     &__img {
         height: 600px;

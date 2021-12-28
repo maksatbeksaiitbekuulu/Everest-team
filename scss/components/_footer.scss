@@ -2,6 +2,7 @@
 @import "../mixins";
 
 .footer{
+    padding-bottom: 15px;
     background-color: $main-footer-bg-color;
     &__logo{
         &-link {
@@ -10,7 +11,6 @@
     
         &-img{
          max-width: 250px;
-         padding-top: 10px;
         } 
 
     }
@@ -38,7 +38,6 @@
 
     }
     &__content{
-        min-height: 350px;
 
         &-title{
             @include title();
@@ -62,12 +61,13 @@
             height: 40px;
             margin:  5px 0px ;
             border-radius: 10px;
+            padding: 2px 10px;
 
             &-textarea{
                 min-height: 120px;
             }
             &-button{
-                max-width: 200px;
+                width: 100%;
             }
 
         }
