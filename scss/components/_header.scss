@@ -24,6 +24,9 @@
         }  
         &-location:hover{
             color: rgb(204, 204, 255);
+            display: inline-block;
+            transform: scale(1.2);
+            transition: ease-in;
         }
     }
 
@@ -55,6 +58,9 @@
         &-link:hover{
             color: #65ffff;
             transition: all 0.3s ease-out;
+            display: inline-block;
+            transform: scale(1.2);
+            transition: ease-in;
         }
     }
 }

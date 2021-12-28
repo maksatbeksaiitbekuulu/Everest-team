@@ -59,7 +59,14 @@ $container: 1130px;
     font-weight: normal;
     text-decoration: none; }
   .header__address-location:hover {
-    color: #ccccff; }
+    color: #ccccff;
+    display: inline-block;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in; }
   .header__navbar {
     font-family: "Roboto Condensed";
     font-size: 14px;
@@ -97,7 +104,14 @@ $container: 1130px;
       color: #65ffff;
       -webkit-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
+      transition: all 0.3s ease-out;
+      display: inline-block;
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-transition: ease-in;
+      -o-transition: ease-in;
+      transition: ease-in; }
 
 .main {
   background-color: rgba(4, 21, 64, 0.905);
@@ -411,13 +425,24 @@ hr {
   font-style: italic; }
 
 .about-first__texts-link {
-  color: aqua; }
+  color: aqua;
+  text-decoration: none; }
+
+.about-first__texts-link:hover {
+  color: #faeda6;
+  display: inline-block;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: ease-in;
+  -o-transition: ease-in;
+  transition: ease-in; }
 
 .about-first__images {
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-name: twinkle-first;
+          animation-name: twinkle-first;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
   .about-first__images-first {
@@ -431,13 +456,17 @@ hr {
   -webkit-border-radius: 50px;
           border-radius: 50px; }
 
-@-webkit-keyframes bounce {
-  50% {
-    padding-top: 150px; } }
+@-webkit-keyframes twinkle-first {
+  20% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.8; } }
 
-@keyframes bounce {
-  50% {
-    padding-top: 150px; } }
+@keyframes twinkle-first {
+  20% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.8; } }
 
 .about-second {
   background-color: white;
@@ -453,26 +482,34 @@ hr {
   text-align: left; }
 
 .about-third__images {
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-name: twinkle-thirt;
+          animation-name: twinkle-thirt;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
   .about-third__images-first {
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out; }
-  .about-third__images-second {
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
+  .about-third__images-second {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out; }
 
 .about-third__img {
   -webkit-border-radius: 50px;
           border-radius: 50px; }
 
-@keyframes bounce {
-  50% {
-    padding-top: 80px; } }
+@-webkit-keyframes twinkle-thirt {
+  20% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5; } }
+
+@keyframes twinkle-thirt {
+  20% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5; } }
 
 .news {
   background-color: rgba(4, 21, 64, 0.905);

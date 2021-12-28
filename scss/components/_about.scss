@@ -19,12 +19,19 @@
         }
         &-link{
             color: aqua;
+            text-decoration: none;
+        }
+        &-link:hover{
+            color: #faeda6;
+            display: inline-block;
+            transform: scale(1.2);
+            transition: ease-in;
         }
     }
 
     &__images{
-        animation-name: bounce;
-        animation-duration: 2s;
+        animation-name: twinkle-first;
+        animation-duration: 3s;
         animation-iteration-count: infinite;
 
         &-first{
@@ -38,11 +45,12 @@
     &__img{
         border-radius: 50px;
     }
-    @keyframes bounce {
-      50% {
-        padding-top: 150px;
-      }
+  @keyframes twinkle-first {
+    20% {
+      transform: scale(0.8);
+      opacity: 0.8;
     }
+  }
     
 }
 
@@ -67,24 +75,26 @@
     }
 
     &__images{
-        animation-name: bounce;
-        animation-duration: 2s;
+        animation-name: twinkle-thirt;
+        animation-duration: 4s;
         animation-iteration-count: infinite;
-        
+
         &-first{
-            animation-timing-function: ease-out;
-        }
-        &-second{
             animation-timing-function: linear;
         }
+        &-second{
+            animation-timing-function: ease-out;
+        }
     }
+    
     &__img{
         border-radius: 50px;
     }
-    @keyframes bounce {
-      50% {
-        padding-top: 80px;
-      }
+  @keyframes twinkle-thirt {
+    20% {
+      transform: scale(0.8);
+      opacity: 0.5;
     }
+  }
     
 }
