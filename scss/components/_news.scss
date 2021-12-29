@@ -21,6 +21,21 @@
             font-size: 20px;
         }
     }
+    &__text{
+        padding: 40px 0;
+    }
+    @media (max-width: 575.98px) {
+        &__title{
+            font-size: 22px;
+
+            &-date{
+                font-size: 16px;
+            }
+        }
+        &__text{
+            padding: 10px 5px;
+        }
+    }
 
     &__images{
         margin-left: auto;
@@ -42,7 +57,6 @@
         }
     }
     &__videos{
-        padding: 70px 0;
 
         &-video{
             padding: 15px;
